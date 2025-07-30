@@ -130,16 +130,21 @@ const form = document.getElementById("add-member-form");
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // blocca il comportamento di invio classico
 
-  // prendo i valori dai campi input
+  /* prendo i valori dai campi input
+  const name = document.getElementById("name").value;
+  const role = document.getElementById("role").value;
+  const email = document.getElementById("email").value; */
+
+  // prendo i dati reali dal form
   const name = document.getElementById("name").value;
   const role = document.getElementById("role").value;
   const email = document.getElementById("email").value;
 
   // creo un nuovo oggetto membro
   const newMember = {
-    name: "Ugo Fantozzi",
-    role: "Ragioniere Subalterno",
-    email: "mariangela@maledetti.com",
+    name: name,
+    role: role,
+    email: email,
     img: "img/1642750313-fantozzi.jpg" // immagine fissa per semplicità
   };
 
