@@ -58,3 +58,6 @@ for (let i = 0; i < teamMembers.length; i++) {
   `;
 } 
 
+// 4. Aggiungo un nuovo membro al submit del form
+const form = document.getElementById("add-member-form");
+
