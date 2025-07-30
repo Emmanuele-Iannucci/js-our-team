@@ -14,8 +14,31 @@
         <h1 class="text-center mb-4">Our Team</h1>
         <!-- Row per le card -->
         <div id="team-container" class="row g-4"></div>
+
+        <!-- Form per aggiungere nuovi membri -->
+         
+        <div class="mt-5">
+            <h2>Aggiungi un nuovo membro</h2>
+            <form id="add-member-form" class="row g-3">
+                <div class="col-md-4">
+                    <input type="text" id="name" class="form-control" placeholder="Nome" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" id="role" class="form-control" placeholder="Ruolo" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Aggiungi Membro</button>
+                </div>
+
+            </form>
+        </div>
     </div>
+
+    <!--Script js-->
+
     <script src="/assets/script.js"></script>
 </body>
-
 </html>
