@@ -72,7 +72,7 @@ form.addEventListener("submit", function (event) {
   // creo un nuovo oggetto membro
   const newMember = {
     name: "Ugo Fantozzi",
-    role: "Umile Subalterno",
+    role: "ragioniere subalterno",
     email: "mariepina@maledetti.com" ,
     img: "img/1642750313-fantozzi.jpg" // immagine fissa per semplicità
   };
