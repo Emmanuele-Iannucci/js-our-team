@@ -36,3 +36,6 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+// 2. SelezionO il contenitore dove andranno le card
+const container = document.getElementById("team-container");
