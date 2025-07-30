@@ -39,3 +39,22 @@ const teamMembers = [
 
 // 2. SelezionO il contenitore dove andranno le card
 const container = document.getElementById("team-container");
+
+// 3. Stampa iniziale delle card
+for (let i = 0; i < teamMembers.length; i++) {
+  const member = teamMembers[i];
+
+  container.innerHTML += `
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 text-center">
+        <img src="${member.img}" class="card-img-top" alt="${member.name}">
+        <div class="card-body">
+          <h5 class="card-title">${member.name}</h5>
+          <p class="card-text">${member.role}</p>
+          <p class="card-text"><small>${member.email}</small></p>
+        </div>
+      </div>
+    </div>
+  `;
+} 
+
